@@ -1,3 +1,5 @@
+## Assignment 7
+
 **Q1**: Let $\{|0\rangle, |1\rangle, . . . , |N − 1\rangle\}$ denote an orthonormal basis for an N-dimensional complex linear vector space. Recall that the Quantum Fourier Transform (QFT) transforms the states in this basis to the set $\{|\tilde{0}\rangle, |\tilde{1}\rangle, . . . , |\tilde{N − 1}\rangle\}$ according to the formula:
 
 $$

@@ -1,3 +1,5 @@
+## Assignment 3
+
 **Q1**: Recall that the Bloch sphere representation of a quantum state is parameterized by two angles θ and ϕ such that a normalised qubit state can be represnted as $|\psi\rangle = \cos(\frac{\theta}{2})|0\rangle + e^{i\phi}\sin(\frac{\theta}{2})|1\rangle$. What are the values of θ and ϕ for the state $\begin{pmatrix} \frac{1}{\sqrt{2}} \\ \frac{1+i}{2} \end{pmatrix}$?
 
 **Options**:

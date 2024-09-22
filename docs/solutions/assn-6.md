@@ -1,3 +1,5 @@
+## Assignment 6
+
 **Q1**: Consider an algorithm which contains two nested for loops, each running over n iterations. As n is increased to infinity, what is the time complexity of this algorithm?
 
 **Options**:

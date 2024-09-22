@@ -1,3 +1,5 @@
+## Assignment 1
+
 **Q1:** Find the values of $a$ and $b$ so that the inner product of the vectors $|\psi\rangle = \frac{2}{3} |0\rangle + \frac{1}{3} |1\rangle$ and $|\phi\rangle = a|0\rangle + b|1\rangle$ is $\frac{1+\sqrt2}{\sqrt6}$.
 
 **Options**:
