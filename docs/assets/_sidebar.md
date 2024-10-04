@@ -7,3 +7,4 @@
 - - [Assignment 6](/solutions/assn-6.md)
 - - [Assignment 7](/solutions/assn-7.md)
 - - [Assignment 8](/solutions/assn-8.md)
+- - [Assignment 9](/solutions/assn-9.md)
