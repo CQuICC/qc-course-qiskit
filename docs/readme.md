@@ -13,3 +13,5 @@ Assignment solutions:
 | 8 | [Assignment 8](./solutions/assn-8.md) |
 | 9 | [Assignment 9](./solutions/assn-9.md) |
 | 10 | [Assignment 10](./solutions/assn-10.md) |
+| 11 | [Assignment 11](./solutions/assn-11.md) |
+| 12 | [Assignment 12](./solutions/assn-12.md) |
