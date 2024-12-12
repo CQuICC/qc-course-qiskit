@@ -1,3 +1,4 @@
+- **Course 1**
 - Assignment Solutions
 - - [Assignment 1](/solutions/assn-1.md)
 - - [Assignment 2](/solutions/assn-2.md)
@@ -11,3 +12,6 @@
 - - [Assignment 10](/solutions/assn-10.md)
 - - [Assignment 11](/solutions/assn-11.md)
 - - [Assignment 12](/solutions/assn-12.md)
+- Quiz Solutions
+- - [Quiz 1 Part A](/solutions/quiz-1_a.md)
+- - [Quiz 1 Part B](/solutions/quiz-1_b.md)
