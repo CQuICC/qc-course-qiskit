@@ -34,7 +34,7 @@ Alternatively, for larger or 'more complicated' states you may apply the [Peres-
 
 ---
 
-**Q3**: For the state $\frac{1}{2}(|+-\rangle + |-+\rangle)$, which of the following statements are true?
+**Q3**: For the state $\frac12(|+-\rangle + |-+\rangle)$, which of the following statements are true?
 
 **Options**:
 - All four outcomes (0,0), (0,1), (1,0), (1,1) are equally likely
@@ -142,18 +142,3 @@ $$
 **Solution**: B, D are trivially density matrices. We can check C by calculating the eigenvalues.
 
 **Answer**: All except the first matrix which is simply the $\sigma_x$ gate.
-
-
----
-
-**Q10**: The $T$ gate acts as follows: it induces a $\frac{\pi}{4}$ phase on the $|1\rangle$ state and leaves the $|0\rangle$ state invariant. In outer product notation, this gate can be written as,
-
-**Options**:
-- (It is unclear what this option is, seems to be an issue in latex)
-- $T = |0\rangle\langle0| + e^{i\frac{\pi}{4}}|1\rangle\langle1|$
-- $T = \frac1{\sqrt2}(|0\rangle\langle0| + i|1\rangle\langle1|)$
-- $T = e^{i\frac{\pi}{8}}(e^{i\frac{-\pi}{8}}|0\rangle\langle0| + e^{i\frac{\pi}{8}}|1\rangle\langle1|)$
-
-**Solution**: The phase introduced in C is of $\frac{\pi}{2}$, and not $\frac{\pi}{4}$.
-
-**Answer**: (B), (D)

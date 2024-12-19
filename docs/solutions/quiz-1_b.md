@@ -1,22 +1,4 @@
-**Q11**: In a quantum circuit with two qubits initialized to $|10\rangle$, which sequence of gate operations leads to the state $\frac1{\sqrt2}(|00\rangle + |11\rangle)$ at the output (Follow Qiskit ordering)?
-
-**Options**:
-- X on qubit $q_1$, H on qubit $q_0$, then CNOT $(q_0, q_1)$
-- H on qubit $q_0$, X on qubit $q_0$, then CNOT $(q_1, q_0)$
-- X on qubit $q_1$, H on qubit $q_1$, then CNOT $(q_0, q_1)$
-- X on qubit $q_1$, H on qubit $q_0$, then CNOT $(q_1, q_0)$
-
-**Solution**: None of these will do it. In order they'll result in
-- $\frac{1}{\sqrt{2}}(|01\rangle + |10\rangle)$
-- $\frac{1}{\sqrt{2}}(|00\rangle + |01\rangle)$
-- $\frac{1}{\sqrt{2}}(|00\rangle - |10\rangle)$
-- $\frac{1}{\sqrt{2}}(|10\rangle + |11\rangle)$
-
-**Answer**: None.
-
----
-
-**Q12**: In the quantum teleportation protocol, Alice and Bob share the entangled state $\frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$. Let $m$ be the measurement outcome of the state being teleported, and $n$ be Alice's measurement outcome. Which gates must Bob apply to recover the state $|\psi\rangle$?
+**Q10**: In the quantum teleportation protocol, Alice and Bob share the entangled state $\frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$. Let $m$ be the measurement outcome of the state being teleported, and $n$ be Alice's measurement outcome. Which gates must Bob apply to recover the state $|\psi\rangle$?
 
 **Options**:
 - $\sigma_x^{1-n} \sigma_z^{1-m}$
@@ -72,7 +54,7 @@ Therefore we need to apply: $\sigma_x^{1-n} \sigma_z^{1-m}$
 
 ---
 
-**Q13**: In the classical worst case, how many times would you need to select a card from a well-shuffled standard deck of cards (52 total) to find the Ace of Spades?
+**Q11**: In the classical worst case, how many times would you need to select a card from a well-shuffled standard deck of cards (52 total) to find the Ace of Spades?
 
 **Options**:
 - $\sqrt{52}$ times
@@ -86,7 +68,7 @@ Therefore we need to apply: $\sigma_x^{1-n} \sigma_z^{1-m}$
 
 ---
 
-**Q14**: Using a quantum algorithm, approximately how many times would you need to select a card from a well-shuffled standard deck of cards (52 total) to find the Ace of Spades?
+**Q12**: Using a quantum algorithm, approximately how many times would you need to select a card from a well-shuffled standard deck of cards (52 total) to find the Ace of Spades?
 
 **Options**:
 - 52 times
@@ -100,7 +82,7 @@ Therefore we need to apply: $\sigma_x^{1-n} \sigma_z^{1-m}$
 
 ---
 
-**Q15**: Which quantum algorithm enables this speed-up in searching?
+**Q13**: Which quantum algorithm enables this speed-up in searching?
 
 **Options**:
 - Deutsch-Josza Algorithm
@@ -114,7 +96,7 @@ Therefore we need to apply: $\sigma_x^{1-n} \sigma_z^{1-m}$
 
 ---
 
-**Q16**: Find the output of the given quantum circuit:
+**Q14**: Find the output of the given quantum circuit:
 
 ```txt
        ┌───┐
@@ -136,7 +118,7 @@ Therefore we need to apply: $\sigma_x^{1-n} \sigma_z^{1-m}$
 
 ---
 
-**Q17**: (refer to quiz for circuit)
+**Q15**: (refer to quiz for circuit)
 
 <!-- # |++1-> -->
 <!-- # -1/rt(2) [ |-01-> + |+11-> ] -->
@@ -167,7 +149,7 @@ print(state_fidelity(statevector, _pp1m)) # 0.25, we expect 1
 
 ---
 
-**Q18**: Which of the following codes implements the logical OR gate on the first two qubits and gives the result on the third qubit?
+**Q16**: Which of the following codes implements the logical OR gate on the first two qubits and gives the result on the third qubit?
 
 **Options**:
 - ```py
@@ -206,7 +188,7 @@ ORgate.measure(2,0)
 
 ---
 
-**Q19**: In a 7-qubit circuit, what is the probability for all of the first 6 wires to output 0 when measured?
+**Q17**: In a 7-qubit circuit, what is the probability for all of the first 6 wires to output 0 when measured?
 
 (Refer to the quiz for the circuit)
 
@@ -222,7 +204,7 @@ ORgate.measure(2,0)
 
 ---
 
-**Q20**: In another 7-qubit circuit, what is the probability for all of the first 6 wires to output 0 when measured?
+**Q18**: In another 7-qubit circuit, what is the probability for all of the first 6 wires to output 0 when measured?
 
 (Refer to the quiz for the circuit)
 
@@ -238,7 +220,7 @@ ORgate.measure(2,0)
 
 ---
 
-**Q21**: Consider a Grover search for N = 2, that is, a search over the two-bit space {00, 01, 10, 11}. Which of the following can be used as an oracle that can mark the element 11?.
+**Q19**: Consider a Grover search for N = 2, that is, a search over the two-bit space {00, 01, 10, 11}. Which of the following can be used as an oracle that can mark the element 11?.
 
 **Options**:
 - $\begin{pmatrix} 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 \end{pmatrix}$
@@ -253,7 +235,7 @@ ORgate.measure(2,0)
 
 ---
 
-**Q22**: Identify the circuit diagram corresponding to the oracle for marking 11:
+**Q20**: Identify the circuit diagram corresponding to the oracle for marking 11:
 
 (Refer to the quiz for the options)
 
@@ -263,7 +245,7 @@ ORgate.measure(2,0)
 
 ---
 
-**Q23**: For $U|0\rangle = \alpha|0\rangle + \beta|1\rangle$, what quantum operation should be applied to recover $U|0\rangle$ at the last qubit when the measurement results of the first 3 qubits is 000?
+**Q21**: For $U|0\rangle = \alpha|0\rangle + \beta|1\rangle$, what quantum operation should be applied to recover $U|0\rangle$ at the last qubit when the measurement results of the first 3 qubits is 000?
 
 (refers to the quiz for the circuit)
 
@@ -277,7 +259,7 @@ ORgate.measure(2,0)
 
 ---
 
-**Q24**: For the quantum circuit with code fragment:
+**Q22**: For the quantum circuit with code fragment:
 ```py
 qc = QuantumCircuit(1)
 qc.x(0)
@@ -311,7 +293,7 @@ $$
 
 ---
 
-**Q25**: What is the circuit depth of the following circuit after transpilation and maximum possible optimization on the 'QASM' simulator?
+**Q23**: What is the circuit depth of the following circuit after transpilation and maximum possible optimization on the 'QASM' simulator?
 ```py
 qc = QuantumCircuit(3)
 qc.ccx(0,1,2)
@@ -336,7 +318,7 @@ print(qc.draw())
 
 ---
 
-**Q26**: A truck travels to set of n cities and returns to the starting point. From the knowledge of the list of cities and the distance between them, if we were to find the shortest possible route and return to the starting point, what class does this problem belong to?
+**Q24**: A truck travels to set of n cities and returns to the starting point. From the knowledge of the list of cities and the distance between them, if we were to find the shortest possible route and return to the starting point, what class does this problem belong to?
 
 **Options**:
 - $\mathbb{O}(n)$
@@ -350,7 +332,7 @@ print(qc.draw())
 
 ---
 
-**Q27**: Identify the correct complexity inequalities from the set given below. Here,
+**Q25**: Identify the correct complexity inequalities from the set given below. Here,
 $\mathbb{O}(f(n)) > \mathbb{O}(g(n))$ means the complexity of $f(n)$ is greater than that of $g(n)$.
 
 **Options**:
@@ -374,7 +356,7 @@ $$
 
 ---
 
-**Q28**: What is the output state and depth of the given circuit?
+**Q26**: What is the output state and depth of the given circuit?
 
 **Options**:
 - |0001⟩ and depth=10
