@@ -10,7 +10,7 @@
 
   <script>
     const FILE = window.location.href.split( '?' )[ 1 ];
-    const name = FILE.split( '/' ).pop().split( '.' )[ 0 ];
+    const name = FILE.replaceAll( "%2F", "/" ).split( '/' ).pop().split( '.' )[ 0 ];
     const main = document.getElementById( 'notebook' );
 
     document.getElementById( 'name' ).innerText = name;
@@ -34,7 +34,7 @@
 <body style="position: relative;">
   <h1 id="name" style="text-transform: capitalize;"></h1>
 
-  <main id="notebook">
+  <div id="notebook">
     <svg x="0px" y="0px" width="80px" height="80px" viewBox="0 0 40 40" enable-background="new 0 0 40 40"
       xml:space="preserve" fill="#fff">
       <path opacity="0.2" fill="#000"
@@ -47,7 +47,7 @@
           dur="0.9s" repeatCount="indefinite" />
       </path>
     </svg>
-  </main>
+  </div>
 
   <style>
     #controls {
