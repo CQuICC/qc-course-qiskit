@@ -9,30 +9,52 @@
   <link rel="stylesheet" href="./assets/nb.css">
 
   <script>
-    const FILE = window.location.href.split( '?' )[ 1 ];
-    const name = FILE.replaceAll( "%2F", "/" ).split( '/' ).pop().split( '.' )[ 0 ];
-    const main = document.getElementById( 'notebook' );
+    function renderNotebook () {
+      const FILE = window.location.href.split( '?' )[ 1 ];
+      const name = FILE.replaceAll( "%2F", "/" ).split( '/' ).pop().split( '.' )[ 0 ];
+      const main = document.getElementById( 'notebook' );
 
-    document.getElementById( 'name' ).innerText = name;
+      const source = document.getElementById( 'source' );
+      const download = document.getElementById( 'download' );
 
-    const file = fetch( FILE ).then( r => r.json() )
-      .then( data => {
-        let render = nb.parse( data );
-        render = render.render()
+      download.href = FILE;
+      main.setAttribute( 'file', FILE );
+      source.href = `https://github.com/CQuICC/qc-course/blob/master/${ FILE }`;
 
-        const mdCells = render.querySelectorAll( '.nb-markdown-cell' );
-        mdCells.forEach( c => {
-          const rendered = marked.marked( c.innerHTML );
-          c.innerHTML = rendered;
-        } );
+      document.getElementById( 'name' ).innerText = name;
 
-        main.innerHTML = render.outerHTML;
-      } )
+      const file = fetch( FILE ).then( r => r.json() )
+        .then( data => {
+          let render = nb.parse( data );
+          render = render.render()
+
+          const mdCells = render.querySelectorAll( '.nb-markdown-cell' );
+          mdCells.forEach( c => {
+            const rendered = marked.marked( c.innerHTML );
+            c.innerHTML = rendered;
+          } );
+
+          main.innerHTML = render.outerHTML;
+        } )
+    }
+
+    renderNotebook();
+
+    // reload check
+    setInterval( () => {
+      const FILE = window.location.href.split( '?' )[ 1 ];
+      const name = FILE.replaceAll( "%2F", "/" ).split( '/' ).pop().split( '.' )[ 0 ];
+      const main = document.getElementById( 'notebook' );
+
+      if ( main.getAttribute( 'file' ) !== FILE ) {
+        renderNotebook();
+      }
+    }, 500 );
   </script>
 </head>
 
 <body style="position: relative;">
-  <h1 id="name" style="text-transform: capitalize;"></h1>
+  <h1 id="name" file="null" style="text-transform: capitalize;"></h1>
 
   <div id="notebook">
     <svg x="0px" y="0px" width="80px" height="80px" viewBox="0 0 40 40" enable-background="new 0 0 40 40"
