@@ -17,16 +17,19 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 
-<body>
+<body xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: 'qc-course-qiskit',
-      repo: 'cquicc/qc-course-qiskit',
+      name: 'QC Course',
       homepage: "assets/_sidebar.md",
       loadSidebar: "assets/_sidebar.md",
+      executeScript: true,
+      themeColor: '#8a3ffc'
     }
   </script>
+  <script src="./notebook.js"></script>
+
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/marked@4"></script>

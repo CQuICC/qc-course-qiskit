@@ -1,0 +1,22 @@
+- [Notebook](./notebook.html)
+- **Course 1**
+- Assignment Solutions
+- - [Assignment 1](/c1-solutions/assn-1.md)
+- - [Assignment 2](/c1-solutions/assn-2.md)
+- - [Assignment 3](/c1-solutions/assn-3.md)
+- - [Assignment 4](/c1-solutions/assn-4.md)
+- - [Assignment 5](/c1-solutions/assn-5.md)
+- - [Assignment 6](/c1-solutions/assn-6.md)
+- - [Assignment 7](/c1-solutions/assn-7.md)
+- - [Assignment 8](/c1-solutions/assn-8.md)
+- - [Assignment 9](/c1-solutions/assn-9.md)
+- - [Assignment 10](/c1-solutions/assn-10.md)
+- - [Assignment 11](/c1-solutions/assn-11.md)
+- - [Assignment 12](/c1-solutions/assn-12.md)
+- Quiz Solutions
+- - [Quiz 1 Part A](/c1-solutions/quiz-1_a.md)
+- - [Quiz 1 Part B](/c1-solutions/quiz-1_b.md)
+- **Course 2**
+- Assignment Solutions
+- - [Assignment 1](/c2-solutions/assn-1.md)
+- - [Assignment 2](/c2-solutions/assn-2.md)
